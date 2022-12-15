@@ -1,0 +1,121 @@
+body {
+    background-color: #141313;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    color: rgb(239, 235, 228);
+    margin: 0px;
+}
+
+#superior {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    width: 65%;
+    color: rgb(239, 235, 228);    
+}
+
+header ul {
+    grid-column-start: 1;
+    margin: 0px 25% 0px 0px;
+    list-style: none;
+    padding: 0px;
+    text-align: start;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #858585
+}
+
+section {
+    background-color: #858585;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    color: black;
+    margin: 0px 25%  0px 25%;
+}
+
+.form {
+    margin: 8px;
+    border-radius: 10px;
+    border-style: none;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.botao {
+    background-color: #2990f0;
+    border: none;
+    border-radius: 10%;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 0px !important;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #032e5a;
+    color: #ffffff;
+}
+
+#formacao {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#formacao input {
+    margin: 0px 10px 0px 10px;
+    width: 50px;
+}
+
+#formacao p {
+    text-align: start;
+}
+
+.conteudo {
+    margin-top: 15px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: #ccc;
+}
+
+table th {
+    background-color: #303030;
+    padding: 1px;
+    color: aliceblue;
+}
+
+table td {
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+table td img {
+    width: 25px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador Escala</title>
+</head>
+<body>
+    
+    <header>
+        <div id="superior">
+            <ul>
+                <li><a href="">Últimas Escalas</a></li>
+            </ul>
+            <h1>Gerador Escala</h1>
+        </div>
+        
+    </header>
+
+    <section>
+        <div>
+            <p>Qual o nome do servidor?</p>
+            <input type="text" class="form" id="name">
+
+            <p>Qual foi a ùltima função?</p>
+            <input type="text" class="form" id="func">
+
+            <p>Qual foi a ùltima data que serviu?</p>
+            <input type="date" class="form" id="date">
+            <br><br>
+            <p>Quais formações você tem?</p>
+
+            <div id="formacao">
+                <p>
+                    <input type="checkbox" class="form chk" id="tocha" value="Tocha">
+                    <label>Tocha</label> 
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="cruz" value="Cruz">
+                    <label >Cruz</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="turibulo" value="Turibulo">
+                    <label>Turibulo</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="naveta" value="Naveta">
+                    <label>Naveta</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="missal" value="Missal">
+                    <label>Missal</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="microfone" value="Microfone">
+                    <label>Microfone</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="mestre_tocha" value="Mestre Tocha">
+                    <label>Mestre Tocha</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="mestre_turibulo" value="Mestre Turibulo">
+                    <label>Mestre Turibulo</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="mestre_padre" value="Mestre Padre">
+                    <label>Mestre Padre</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="credencia" value="Credência">
+                    <label>Credência</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="form chk" id="evangeliario" value="Evangeliário">
+                    <label>Evangeliário</label>
+                </p>
+
+                
+            </div>
+            <p>
+                <button class="botao" onclick="acolito.cancelar()"> Cancelar </button>
+                <button class="botao" onclick="acolito.adicionar()">Adicionar</button>
+            </p>
+        </div>
+        <div id="resultado">
+            Preencha os valores acima!
+        </div>
+    </section>
+    <div class="conteudo">
+        <table border="1">
+            <thead>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Última Função</th>
+                <th>Última Data</th>
+                <th>Remover</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
